@@ -38,3 +38,9 @@ $$\overline{E^2_1}=\sqrt{\frac{Fa^{x-1}}{(x-1)*x}}+a^{\frac{1}{3}}_1+\beta^{\fra
 $$\begin{equation}\label{eq:fourierrow}
 f(x) = \frac{A_0}{2} + \sum \limits_{n=1}^{\infty} A_n \cos \left( \frac{2 n \pi x}{\nu} - \alpha_n \right) 
 \end{equation}$$
+
+
+pie title Pie 2021
+    "1" : 223
+    "2" : 50
+    "3" : 100
