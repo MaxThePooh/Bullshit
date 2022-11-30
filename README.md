@@ -39,7 +39,7 @@ $$\begin{equation}\label{eq:fourierrow}
 f(x) = \frac{A_0}{2} + \sum \limits_{n=1}^{\infty} A_n \cos \left( \frac{2 n \pi x}{\nu} - \alpha_n \right) 
 \end{equation}$$
 
-'''mermaid
+```mermaid
 pie title Pie 2021
     "1" : 223
     "2" : 50
