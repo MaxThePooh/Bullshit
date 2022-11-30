@@ -19,3 +19,4 @@ for q, a in ls:
         answers_counter[0] += 1 
 print("\nДано ответов: {}, Верных ответов: {}".format(answers_counter[0], answers_counter[1]))
 input()
+
