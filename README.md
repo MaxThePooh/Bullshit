@@ -45,7 +45,7 @@ pie title Жизнь студента
     "Работа" : 30
     "Depression" : 60
     
-graph TD
+graph 
     A[Wake up] --> B(Go to lyceum)
     B --> C{Do 100 push ups}
     C -->|One| D[Focus on yourself]
