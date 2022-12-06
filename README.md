@@ -45,10 +45,9 @@ pie title Жизнь студента
     "Работа" : 30
     "Depression" : 60
     
-graph 
-    A[Wake up] --> B(Go to lyceum)
-    B --> C{Do 100 push ups}
-    C -->|One| D[Focus on yourself]
-    C -->|Two| E[Get rich]
-    C -->|Three| F[Make your parents proud of you]
- 
+flowchart LR
+    A[10кл] -->B(Переводные)
+    B --> C[11кл]
+    C-->E{Экзамен}
+    E -->|Хорошо| D[Уник]
+    E -->|Плохо| F[Армия]
