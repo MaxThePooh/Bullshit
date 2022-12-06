@@ -45,6 +45,7 @@ pie title Жизнь студента
     "Работа" : 30
     "Depression" : 60
     ```
+   ``` mermaid
 flowchart LR
     A[10кл] -->B(Переводные)
     B --> C[11кл]
