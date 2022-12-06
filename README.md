@@ -41,6 +41,6 @@ f(x) = \frac{A_0}{2} + \sum \limits_{n=1}^{\infty} A_n \cos \left( \frac{2 n \pi
 
 ```mermaid
 pie title Жизнь студента
-    "Сон" : 60
+    "Сон" : 10
     "Работа" : 30
-    "Depression" : 10
+    "Depression" : 60
