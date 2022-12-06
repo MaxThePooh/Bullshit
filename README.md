@@ -40,7 +40,7 @@ f(x) = \frac{A_0}{2} + \sum \limits_{n=1}^{\infty} A_n \cos \left( \frac{2 n \pi
 \end{equation}$$
 
 ```mermaid
-pie title Pie 2021
-    "1" : 223
-    "2" : 50
-    "3" : 100
+pie title Жизнь студента
+    "Сон" : 60
+    "Работа" : 30
+    "Depression" : 10
