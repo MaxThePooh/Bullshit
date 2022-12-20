@@ -1,5 +1,5 @@
 import math
-def aboba():
+def textvol():
     print("1.Сколько байт и бит займёт слово")
     print("2.Сколько символов в слове")
     print("3.Сколько байт в одном символе")
@@ -10,7 +10,7 @@ def aboba():
         c=int(input("Сколько байт в одном символе=")) 
         if b<=0 or c<=0:
             print("Введи нормально")
-            aboba()
+            textvol()
         else :
             a=b*c
             print("Размер="+str(a) + "Байт")
@@ -20,7 +20,7 @@ def aboba():
         c=int(input("Сколько байт в одном символе="))
         if a<=0 or c<=0:
             print("Введи нормально!")
-            aboba()
+            textvol()
         else :
             b=a/c
             print (str(b) + "символов")
@@ -30,13 +30,13 @@ def aboba():
         b=int(input("Сколько символов"))
         if a<=0 or b<=0:
             print("Введи нормально")
-            aboba()
+            textvol()
         else :
             c=a/b
             print ("Байт в одном символе="+str(c) )
     else:
         print("Введи нормально!")       
-def amogus():
+def soundvol():
     print("1.Размер аудиофайла")
     print("2.Частота")
     print("3.Время звучания")
@@ -49,7 +49,7 @@ def amogus():
         I=int(input("Разрядность регистра (бит)="))
         if D<=0 or T<=0 or I<=0:
             print("Введи нормально")
-            amogus()
+            soundvol()
         else:
             a=D*T*I/8
             print(str(a) + "Бит")
@@ -60,7 +60,7 @@ def amogus():
         I=int(input("Разрядность регистра (бит)="))
         if A<=0 or T<=0 or I<=0:
             print("Введи нормально")
-            amogus()
+            soundvol()
         else:
             D=8*A/(T*I)
             print ("Частота="+str(D))
@@ -71,7 +71,7 @@ def amogus():
         I=int(input("Разрядность регистра="))
         if A<=0 or D<=0 or I<=0:
             print("Введи нормально")
-            amogus()
+            soundvol()
         else:
             T=8*A/(D*I)
             print ("Время звучания="+str(T))
@@ -82,13 +82,13 @@ def amogus():
         D=int(input("Частота="))
         if D<=0 or T<=0 or A<=0:
             print("Введи нормально")
-            amogus()
+            soundvol()
         else:
             I=8*A/(T*I)
             print ("Разрядность регистра="+str(I))
     else:
         print("Введи нормально!")    
-def abobus():
+def viedeovol():
     print("1.Размер изображения")
     print("2.Глубина цвета через размер")
     print("3.Глубина цвета через количество цвето")
@@ -101,7 +101,7 @@ def abobus():
         V=int(input("Количество пикселей="))
         if I<=0 or V<=0:
             print("Введи нормально")
-            abobus()
+            viedeovol()
         else :
             a=V*I
             print(str(a) + "Бит")
@@ -110,7 +110,7 @@ def abobus():
         N=int(input("Количество цветов="))
         if N<=0:
             print("Введи нормально")
-            abobus()
+            videovol()
         else:
             I=math.log(N,2)
             print ("Глубина цвета="+str(I))
@@ -120,7 +120,7 @@ def abobus():
         V=int(input("Количество пикселей="))
         if A<=0 or V<=0:
             print("Введи нормально")
-            abobus()
+            viedeovol()
         else :
             I=A*V
             print("Глубина"+str(a/8))
@@ -129,7 +129,7 @@ def abobus():
         I=int(input("Глубина цвета (бит)="))
         if I<=0:
             print("Введи нормально")
-            abobus()
+            viedeovol()
         else :
             N=2**I
             print ("Количество цветов="+str(N))
@@ -139,7 +139,7 @@ def abobus():
         I=int(input("Глубина="))
         if I<=0 or A<=0:
             print("Введи нормально")
-            abobus()
+            viedeovol()
         else :
             V=A/I
             print ("Разрядность регистра="+str(V))
@@ -151,11 +151,11 @@ def menu1():
     print("3.Графические задачи")
     a=int(input("Шо тебе надо?"))
     if a==1:
-        aboba()
+        textvol()
     elif a==2:
-        amogus()
+        soundvol()
     elif a==3:
-        abobus()
+        viedeovol()
     else:
         print("Введи нормально!")
 def morza():
