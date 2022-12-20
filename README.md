@@ -65,3 +65,6 @@ flowchart LR
     Eg-->V(Выгнали)
     V-->|Перездать|Eg
 ```
+
+![image](https://user-images.githubusercontent.com/67865666/208572303-f9afff05-834e-4a53-9617-1bd15b040c8d.png)
+
