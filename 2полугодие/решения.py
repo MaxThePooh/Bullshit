@@ -8,6 +8,8 @@ def f5():
     if int(b,2)>516:
         print(N)
         break
+        
+        
 from itertools import product
 def f23(x,y,z):
     count=0
