@@ -9,6 +9,27 @@ def f5():
         print(N)
         break
         
+def f24()
+  with open('24.txt') as f:
+    s=f.readline().replace('C','S').replace('D','S').replace('F','S').replace('A','G').replace('O','G')
+    s=s.replace('SG','1')
+    count=0
+    m=0
+    for i in s:
+        if i=='1':
+            count+=1
+        else:
+            if count>m:
+                m=count
+            count=0
+    print(m)
+def f24()
+  count=0
+for i in range(2023,10**10,2023):
+    ist=str(i)
+    if ist[0]=='1' and ist[2:6]=='2139' and i%10==4:
+        print(i,i//2023)
+
         
 from itertools import product
 def f23(x,y,z):
