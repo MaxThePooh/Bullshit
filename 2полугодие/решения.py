@@ -23,7 +23,20 @@ def f24()
                 m=count
             count=0
     print(m)
-def f24()
+    
+def f26()
+  with open('26.txt') as f:
+    data=[int(x) for x inf]
+    s=sorted(s[1:],reverse=True)
+    k,mini=1,s[0]
+
+    for i in range(1,len(s)):
+        if s[i]+3<=mini:
+            mini=s[i]
+            k+=1
+print(k,mini)
+    
+def f25()
   count=0
 for i in range(2023,10**10,2023):
     ist=str(i)
