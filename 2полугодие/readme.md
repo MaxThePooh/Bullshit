@@ -49,6 +49,7 @@ s.pop(0)
 
 s.sort(reverse=True)
 
+from itertools import product
 nums=product('12',repeat=i)
 
 numb.count('2')
