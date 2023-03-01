@@ -23,6 +23,10 @@ def f24()
                 m=count
             count=0
     print(m)
+    with open('24.txt') as f:
+        s=f.readline().replace('AB','1').replace('AC','1').replace('A',' ').replace('B',' ').replace('C',' ')
+        print(max(len(x) for x in s.split()))
+
     
 def f26()
   with open('26.txt') as f:
