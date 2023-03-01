@@ -26,15 +26,18 @@ def f24()
     
 def f26()
   with open('26.txt') as f:
-    data=[int(x) for x inf]
-    s=sorted(s[1:],reverse=True)
-    k,mini=1,s[0]
+    s=[int(x) for x in f]
+    s.pop(0)
+    s.sort(reverse=True)
+    count=1
+    m=s[0]
 
     for i in range(1,len(s)):
-        if s[i]+3<=mini:
-            mini=s[i]
-            k+=1
-print(k,mini)
+        if s[i]+3<=m:
+            m=s[i]
+            count+=1
+print(count,m)
+
     
 def f25()
   count=0
