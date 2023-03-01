@@ -49,6 +49,12 @@ for i in range(2023,10**10,2023):
     ist=str(i)
     if ist[0]=='1' and ist[2:6]=='2139' and i%10==4:
         print(i,i//2023)
+   def f25():
+    for a in range(10):
+        for b in range(10):
+            x=int(f'12345{a}6{b}8')
+            if x%17==0:
+                print(x,x//17)
 
         
 from itertools import product
