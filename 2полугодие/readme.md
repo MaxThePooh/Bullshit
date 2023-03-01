@@ -35,3 +35,23 @@
 5. После вывода минимального, прерывание break
 
 19-21 Можно строить таблицу
+
+
+with open('24.txt') as f:
+f.readline().replace('AB','1')
+print(max(len(x) for x in s.split()))
+s=[int(x) for x in f]
+s.pop(0)
+s.sort(reverse=True)
+nums=product('12',repeat=i)
+numb.count('2')
+c=list(map(abs,nums))
+c.append(a)
+sys.setrecursionlimit(3000)
+
+for i in range(2023,10**10,2023):
+    ist=str(i)
+    if ist[0]=='1' and ist[2:6]=='2139' and i%10==4:
+        print(i,i//2023)
+    else
+      a=int(b)
