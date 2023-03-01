@@ -38,15 +38,25 @@
 
 
 with open('24.txt') as f:
+
 f.readline().replace('AB','1')
+
 print(max(len(x) for x in s.split()))
+
 s=[int(x) for x in f]
+
 s.pop(0)
+
 s.sort(reverse=True)
+
 nums=product('12',repeat=i)
+
 numb.count('2')
+
 c=list(map(abs,nums))
+
 c.append(a)
+
 sys.setrecursionlimit(3000)
 
 for i in range(2023,10**10,2023):
