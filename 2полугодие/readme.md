@@ -287,28 +287,28 @@ with open ('26.txt') as f:
 19-21 Можно строить таблицу
 
 ```
-with open('24.txt') as f:
+with open('24.txt') as f: - открытие файла и присвоениее ему имени f 
 
-f.readline().replace('AB','1')
+f.readline().replace('AB','1') - чтение строки, замена
 
-print(max(len(x) for x in s.split()))
+print(max(len(x) for x in s.split())) - вывести максимальную длину x в списке s
 
-s=[int(x) for x in f]
+s=[int(x) for x in f] - для каждого x в f как int 
 
-s.pop(0)
+s.pop(0) - удалить первое
 
-s.sort(reverse=True)
+s.sort(reverse=True) - инверсивная сортировка
 
 from itertools import product
 nums=product('12',repeat=i)#Итерируемый список, элемениы которого - это комбинации по заданным условиям. Repeat - количество разрядов в строке.
 
-numb.count('2')
+numb.count('2') - подсчет символов
 
-c=list(map(abs,nums))
+c=list(map(abs,nums)) - преобращение в лист бсолютных значений
 
-c.append(a)
+c.append(a) - добавить элемент в список
 
-sys.setrecursionlimit(3000)
+sys.setrecursionlimit(3000) - лимит рекурсии
 
 for i in range(2023,10**10,2023):
     ist=str(i)
