@@ -79,7 +79,7 @@ goto()- идти на позицю (x,y);
 dot()- поставить точку, в скобках толщшина точки;
 done()- закончить рисование.
 Пример кода:
-```
+```py
 from turtle import *
 left(90)
 for i in range (7):
@@ -114,7 +114,7 @@ done()
 Выводим счетчик правильных занчений, если число удовлетворяет всем проверкам, пишем количество таких чисел;
 
 Пример кода:
-
+```py
 from itertools import product
 nums=product('01234567',repeat=6)
 k=0
@@ -130,10 +130,11 @@ for n in nums:
         if not sp: 
             k+=1
 print(k)
+```
 Пояснения к 12 задаче:
 
 Пример кода:
-
+```py
 spisok=[]
 for num in range(2,1000):
     if all(num%delit!=0 for delit in range (2, num-1)):
@@ -144,26 +145,29 @@ for i in spisok:
         if y*4+117==i and flag==False:
             print(y, i)
             flag=True
+```
 Пояснения к 14 задаче:
 
 Пример кода:
-
+```py
 a='0123456789abcde'
 for x in a:
     f=int(f'123{x}5',15)+int(f'1{x}233',15)
     if  f%14 ==0:
         print(f//14)
         break
+```
 Пояснения к 15 задаче:
 
 Пример кода:
-
+```py
 for A in range(1,1000):
   if all(((x%2==0)<=(x%3!=0)) or (x+A>=100) for x in range (1,100)):
        print(A)
        break
+```
 Пояснкния к 16 задаче: Пример кода:
-
+```py
 import sys
 sys.setrecursionlimit(3050)
 def f(n):
@@ -195,13 +199,14 @@ with open('17.txt') as f:
            sqrt.append(c[i]**2+c[i+1]**2)
    print(count)
    print(max(sqrt))
+```
 Пояснения к 21 задаче:
 
 Если в голове не соображжается, составляем таблицу.
 Пояснения к 23 задаче:
 
 Пример кода:
-
+```py
 from itertools import product
 def f (x, y, z):
     count=0
@@ -220,18 +225,20 @@ def f (x, y, z):
 g=f(10, 35, 24)
 r=f(1,10, 10)
 print(g*r)
+```
 Альтернативное решение:
-
+```py
 def f(x,y):
     if x>y or x==17:
         return 0
     elif x==y: return 1
     return f(x+1,y) + f(x*2, y)
 print(f(1,10)*f(10,35))
+```
 Пояснения к 24 задаче:
 
 Пример кода:
-
+```py
 with open('24.txt') as f:
     s=f.readline().replace('C','S').replace('D','S').replace('F','S')
     s=s.replace('A','G').replace('O','G')
@@ -243,8 +250,9 @@ with open('24.txt') as f:
             kmax=max(k,kmax)
         else:k=0
 print(kmax)
+```
 Пояснения к 25 задаче: Пример кода:
-
+```py
 for i in range (2023, 10**10, 2023):
     n=str(i)
     if n[0]=='1' and n[2:6]=='2139' and n[-1]=='4': print(i, i/2023)
@@ -253,8 +261,9 @@ for a in range(10):
         x= int(f'12345{a}6{b}8')
         if x %17==0:
             print(x, x//17)
+```
 Пояснения к 26 задаче: Пример кода:
-
+```py
 with open ('26.txt') as f:
     S=[int(x) for x in f]
     S.pop(0)
@@ -266,6 +275,7 @@ with open ('26.txt') as f:
             mini=S[i]
             k+=1
     print(k, mini)
+```
 ////
 
 
