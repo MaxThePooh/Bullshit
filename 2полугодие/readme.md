@@ -300,7 +300,7 @@ s.pop(0)
 s.sort(reverse=True)
 
 from itertools import product
-nums=product('12',repeat=i)
+nums=product('12',repeat=i)#Итерируемый список, элемениы которого - это комбинации по заданным условиям. Repeat - количество разрядов в строке.
 
 numb.count('2')
 
