@@ -287,6 +287,8 @@ with open ('26.txt') as f:
 19-21 Можно строить таблицу
 
 ```
+a=[]
+
 with open('24.txt') as f: - открытие файла и присвоениее ему имени f 
 
 f.readline().replace('AB','1') - чтение строки, замена
@@ -314,8 +316,10 @@ for i in range(2023,10**10,2023):
     ist=str(i)
     if ist[0]=='1' and ist[2:6]=='2139' and i%10==4:
         print(i,i//2023)
-    else
+    else:
       a=int(b)
+    elif(all(num%delit!=0) for delit in range(2,numb)):
+        print(f'102{i}132')
       
 forward(X)	Пройти вперёд X пикселей
 backward(X)	Пройти назад X пикселей
@@ -324,4 +328,5 @@ right(X)	Повернуться направо на X градусов
 penup()	Не оставлять след при движении
 pendown()
 goto(x, y)
+dot(1)
 ```
