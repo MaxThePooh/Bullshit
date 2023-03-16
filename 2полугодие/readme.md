@@ -329,4 +329,9 @@ penup()	Не оставлять след при движении
 pendown()
 goto(x, y)
 dot(1)
+
+n=[]
+n=split(',')
+n=','.join(s)
+
 ```
