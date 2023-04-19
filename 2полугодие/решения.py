@@ -165,25 +165,47 @@ def f16()
   
   
   def f27():  
-  from math import ceil
+    from math import ceil
 
-  f = open("27_B.txt")
-  n = int(f.readline())
-  elems = []
-  sum = 0
-  rightSum = 0
-  leftSum = 0
-  for i in range(0, n):
-      a, b = map(int, f.readline().split())
-      elems.append([a, ceil(b / 36)])
-  cost = [0] * n
-  for i in range(1, n):
-      cost[0] += (elems[i][0] - elems[0][0]) * elems[i][1]
-      rightSum += elems[i][1]
-  for i in range(1, n):
-      leftSum += elems[i - 1][1]
-      cost[i] = cost[i - 1] - rightSum * (elems[i][0] - elems[i - 1][0]) + leftSum * (elems[i][0] - elems[i - 1][0])
-      rightSum -= elems[i][1]
-  print(min(cost))
+    f = open("27_B.txt")
+    n = int(f.readline())
+    elems = []
+    sum = 0
+    rightSum = 0
+    leftSum = 0
+    for i in range(0, n):
+        a, b = map(int, f.readline().split())
+        elems.append([a, ceil(b / 36)])
+    cost = [0] * n
+    for i in range(1, n):
+        cost[0] += (elems[i][0] - elems[0][0]) * elems[i][1]
+        rightSum += elems[i][1]
+    for i in range(1, n):
+        leftSum += elems[i - 1][1]
+        cost[i] = cost[i - 1] - rightSum * (elems[i][0] - elems[i - 1][0]) + leftSum * (elems[i][0] - elems[i - 1][0])
+        rightSum -= elems[i][1]
+    print(min(cost))
+    
+    with open ('27_B.txt') as f:
+    n=[x for x in f] # записываем строки
+    n.pop(0) #убираме первую строку
+    sp=[]
+    k=[]
+    ind=[]
+    for i in n:
+        sp.append(list(map(int,i.split()))) # переводим значения в списке в числа
+    for i in range(len(sp)):
+        k.append((sp[i][1]-1)//36+1) # находим кол-во контейнеров
+    for i in range(len(sp)):
+        ind.append(sp[i][0])#сохраняем километраж пунктов 
+    sp=list(zip(ind,k))#соединяем километраж и кол-во контейнеров
+    costs=[]
+    for i in range(549715,549735,1):# в этом цикле мы выводим значения приближаясь к минимальному
+        pos=sp[i][0]
+        cost=0
+        for x in sp:
+            cost=cost+abs(pos-x[0])*x[1]#вычисляем стоимость в этот пункт
+        costs.append(cost)
+        print(i,sp[i][0],cost)
   
   
